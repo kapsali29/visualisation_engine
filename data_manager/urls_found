@@ -1,0 +1,123 @@
+USERS
+------
+
+Users/country
+(bar_chart)
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&x_axis_type=text&x_axis_name=country&x_axis_title=Country&y_axis_title=Users&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_users
+(pie_chart)
+(x) http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&y_var_units[]=users&x_axis_name=country&x_axis_title=Country&use_default_colors=false&chart_3d=false&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&color_list_request[]=gold&color_list_request[]=ceramic&color_list_request[]=fuchsia&color_list_request[]=violet&color_list_request[]=purple&color_list_request[]=cyan&base_query=group_users
+
+User/pilot
+(bar_chart)
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&x_axis_type=text&x_axis_name=pilotId&x_axis_title=Pilot&y_axis_title=Users&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_users
+(pie_chart)
+(x) http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&y_var_units[]=users&x_axis_type=text&x_axis_name=pilotId&x_axis_title=Pilot&y_axis_title=Count&use_default_colors=true&chart_3d=true&base_query=group_users
+
+User/role
+(bar_chart)
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&x_axis_type=text&x_axis_name=role_value&x_axis_title=Role&y_axis_title=Users&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_users
+(pie_chart)
+(x) http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=id&y_var_titles[]=Number%20of%20Users&y_var_units[]=users&x_axis_type=text&x_axis_name=role_value&x_axis_title=Role&y_axis_title=Count&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&color_list_request[]=yellow&chart_3d=true&use_default_colors=false&base_query=group_users
+
+COURSE - Matching
+------------
+With CV (Cylinder gauge)
+(xx)http://localhost:8000/visualiser/show_cylinder_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=course_match_cv&user_id=6&course_id=44
+
+With CV (Circular gauge)
+(xx)http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=course_match_cv&user_id=6&course_id=44
+
+Curriculum-up-to-date:
+http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=up_to_date&x_axis_title=Up To Date&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=curriculum_up_to_date
+
+
+With Job Applications (Cylinder gauge)
+(xx)http://localhost:8000/visualiser/show_cylinder_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=course_match_applications&user_id=6&course_id=44
+
+With Job Applications (circular gauge)
+(xx)http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=course_match_applications&user_id=6&course_id=44
+
+SKILL -Matching
+-----------------
+Only with job applications (Cylinder gauge)
+(xx)http://localhost:8000/visualiser/show_cylinder_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=skill_match_applications&user_id=6&skill_id=354
+
+Only with job applications (Circular gauge)
+(xx)http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=relation&x_axis_title=Relation&x_axis_unit=%&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=100&base_query=skill_match_applications&user_id=6&skill_id=354
+
+COURSES- SKILLS
+----------------
+Most popular skills (job market)
+(bar_chart)
+(xx)http://localhost:8000/visualiser/show_column_chart?y_var_names[]=count&y_var_titles[]=Job%20postings&y_var_units[]=number%20of%20job%20postings&x_axis_type=text&x_axis_name=skill_name&x_axis_title=Skill&y_axis_title=Demand%20in%20Job%20Market&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=popular_skills_market&asc=True&limit_skills=10
+
+Least popular skills (job market)
+(bar_chart)
+(xx)http://localhost:8000/visualiser/show_column_chart?y_var_names[]=count&y_var_titles[]=Job%20postings&y_var_units[]=number%20of%20job%20postings&x_axis_type=text&x_axis_name=course_name&x_axis_title=Course&y_axis_title=Demand%20in%20Job%20Market&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=popular_skills_market&asc=False&limit_skills=10
+
+
+Most popular courses(job market)
+(bar chart)
+(xx)http://localhost:8000/visualiser/show_column_chart?y_var_names[]=count&y_var_titles[]=Job%20postings&y_var_units[]=number%20of%20job%20postings&x_axis_type=text&x_axis_name=course_name&x_axis_title=Course&y_axis_title=Demand%20in%20Job%20Market&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=popular_courses_market&asc=True&limit_courses=10
+
+Least popular courses(job market)
+(bar chart)
+(xx)http://localhost:8000/visualiser/show_column_chart?y_var_names[]=count&y_var_titles[]=Job%20postings&y_var_units[]=number%20of%20job%20postings&x_axis_type=text&x_axis_name=course_name&x_axis_title=Course&y_axis_title=Demand%20in%20Job%20Market&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=popular_courses_market&asc=False&limit_courses=10
+
+Courses per Professor
+(bar_chart)
+(xx)http://localhost:8000/visualiser/show_column_chart?y_var_names[]=count&y_var_titles[]=Courses&y_var_units[]=number%20of%20courses&x_axis_type=text&x_axis_name=user_name&x_axis_title=Professor&y_axis_title=Courses%20taught&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_course_professor
+(pie_chart)
+(xx)http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=count&y_var_titles[]=Courses&y_var_units[]=number%20of%20courses&x_axis_type=text&x_axis_name=user_name&x_axis_title=Professor&y_axis_title=Courses%20taught&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_course_professor
+
+
+SKILLS-JOB
+-----------
+skill demand (from job postings) per "column"(specialization, country, employer etc.)
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=Ruby&y_var_names[]=Machine%20Learning&y_var_titles[]=Ruby&y_var_titles[]=Machine%20Learning&y_var_units[]=job%20postings&x_axis_type=text&x_axis_name=employer&x_axis_title=Employer&y_axis_title=Skill%20Demand&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=false&use_default_colors=false&base_query=skill_demand_per_column
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=Ruby&y_var_names[]=Machine%20Learning&y_var_titles[]=Ruby&y_var_titles[]=Machine%20Learning&y_var_units[]=job%20postings&x_axis_type=text&x_axis_name=country&x_axis_title=Country&y_axis_title=Skill%20Demand&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=false&use_default_colors=false&base_query=skill_demand_per_column
+
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=Ruby&y_var_names[]=Machine%20Learning&y_var_titles[]=Ruby&y_var_titles[]=Machine%20Learning&y_var_units[]=job%20postings&x_axis_type=text&x_axis_name=specialization&x_axis_title=Specialization&y_axis_title=Skill%20Demand&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=false&use_default_colors=false&base_query=skill_demand_per_column
+
+JOBS
+------
+User-Job application
+(bar_chart)
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=id&y_var_titles[]=Number of Applications&x_axis_type=text&x_axis_name=employment_value&x_axis_title=Employment Level&y_axis_title=Number of applications&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_job_user
+(pie)
+(x) http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=id&y_var_titles[]=Number of Applications&y_var_units[]=%20&x_axis_type=text&x_axis_name=employment_value&x_axis_title=Employment Level&y_axis_title=Number of applications&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=group_job_user
+
+Market Demand per column
+(pie-chart)
+(x) http://localhost:8000/visualiser/show_pie_chart?y_var_names[]=count&y_var_titles[]=Market%20Demand&y_var_units[]=Job%20Postings&x_axis_name=specialization&x_axis_title=Specialization&use_default_colors=false&chart_3d=false&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&color_list_request[]=gold&color_list_request[]=ceramic&color_list_request[]=fuchsia&color_list_request[]=violet&color_list_request[]=purple&color_list_request[]=cyan&base_query=group_jobs
+
+level - Salary Expectation
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=exp_salary&y_var_titles[]=Expected Salary&y_var_units[]=%&x_axis_type=text&x_axis_name=level_value&x_axis_title=Seniority Level&y_axis_title=Expected Salary&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=salary_info
+
+level-Salary Expectation/country
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=Greece&y_var_names[]=Spain&y_var_titles[]=Greece&y_var_titles[]=Spain&y_var_units[]=E&x_axis_type=text&x_axis_name=level_value&x_axis_title=Seniority%20Level&y_axis_title=Expected Annual Salary&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=salary_info&y_column=country
+
+User skills - Job skills coverage percentage
+(x) http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=Strength&x_axis_title=Power&x_axis_unit=W&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=200&base_query=skills_coverage&user_id=6&job_id=1
+
+Skill demand in function of time
+(x) http://localhost:8000/visualiser/show_line_chart?y_var_names[]=skill_demand&y_var_titles[]=skill_demand&y_var_units[]=v1_unit&x_axis_type=time&x_axis_name=time&x_axis_title=Time&x_axis_unit=-&y_axis_title=Skill Demand&color_list_request[]=blue&color_list_request[]=red&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=2000&skill_id=354&specialization=Software%20engineering&base_query=skill_demand_in_time
+(x)(or without defining specialization) http://localhost:8000/visualiser/show_line_chart?y_var_names[]=skill_demand&y_var_titles[]=skill_demand&y_var_units[]=v1_unit&x_axis_type=time&x_axis_name=time&x_axis_title=Time&x_axis_unit=-&y_axis_title=Skill%20Demand&color_list_request[]=blue&color_list_request[]=red&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=2000&skill_id=354&base_query=skill_demand_in_time
+
+Specialization demand in function of time
+http://localhost:8000/visualiser/show_line_chart?y_var_names[]=Software%20engineering&y_var_titles[]=Software%20engineering&y_var_names[]=Frontend%20Development&y_var_titles[]=Frontend%20Development&y_var_units[]=job%20postings&y_var_units[]=job%20postings&x_axis_type=time&x_axis_name=time&x_axis_title=Time&x_axis_unit=-&y_axis_title=Specialization%20Demand&color_list_request[]=blue&color_list_request[]=red&use_default_colors=true&min_max_y_value[]=0&min_max_y_value[]=2000&base_query=specialization_demand_in_time
+
+Enrolled courses - applied jobs coverage percentage
+(x) http://localhost:8000/visualiser/show_circular_gauge_chart?x_axis_name=Strength&x_axis_title=Power&x_axis_unit=W&color_list_request[]=red&color_list_request[]=blue&use_default_colors=false&min_max_y_value[]=0&min_max_y_value[]=200&base_query=skills_courses_skills_coverage&user_id=1
+
+
+CAREER PATH TRAJECTORY
+-------------------------
+(--)http://localhost:8000/visualiser/show_sankey_diagram?pass_value=pass_value&use_def_colors=false&chart_title=Career%20Path%20Trajectory&&color_node_list[]=blue&color_node_list[]=violet&color_node_list[]=purple&color_node_list[]=fuchsia&color_node_list[]=red&color_node_list[]=ceramic&color_node_list[]=gold&color_node_list[]=black&color_node_list[]=gray&base_query=career_path_trajectory
+
+user skills - job skills Radar Chart
+(x) http://localhost:8000/visualiser/show_radar_chart?y_var_names[]=skil_level&y_var_titles[]=skill_level&x_axis_name=name&x_axis_title=Name&use_default_colors=false&chart_3d=false&color_list_request[]=red&color_list_request[]=blue&base_query=user_job_skills&user_id=6&job_id=1
+user Courses - Grades Bar Chart
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=grade&y_var_titles[]=Grade&y_var_units[]=&x_axis_type=name&x_axis_name=name&x_axis_title=Course&y_axis_title=Grades&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=user_grades&user_id=3
+Avg Grades in provided Courses
+(x) http://localhost:8000/visualiser/show_column_chart?y_var_names[]=grade&y_var_titles[]= Average Grades&y_var_units[]=&y_var_units[]=%&x_axis_type=name&x_axis_name=name&x_axis_title=Course&y_axis_title=Grades&color_list_request[]=blue&color_list_request[]=red&color_list_request[]=green&use_default_colors=false&chart_3d=true&use_default_colors=false&base_query=courses_avg_grades&courses[]=24&courses[]=31&courses[]=160

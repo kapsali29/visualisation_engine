@@ -1,0 +1,30 @@
+version: '3'
+
+networks:
+  config_qmediator:
+    external: true
+
+services:
+
+  visualisation_engine:
+    container_name: ${VIZ_HOSTNAME}
+    hostname: ${VIZ_HOSTNAME}
+    restart: always
+    networks:
+      - config_qmediator
+    build:
+      context: ".."
+      dockerfile: config/Dockerfile
+      args:
+        SETTINGS: ${SETTINGS}
+        PORT: ${PORT}
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      SETTINGS: ${SETTINGS}
+      PORT: ${PORT}
+      POSTGRESS_USER: ${POSTGRESS_USER}
+      POSTGRESS_PASSWORD: ${POSTGRESS_PASSWORD}
+      POSTGRESS_HOST: ${POSTGRESS_HOST}
+      POSTGRESS_PORT: ${POSTGRESS_PORT}
+      POSTGRESS_DB: ${POSTGRESS_DB}
